@@ -7,12 +7,12 @@ import Footer from "../footer";
 import "../../../sass/style.scss";
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <>
     <Helmet title="Gatsby React Boilerplate" />
     <Header />
     {children}
     <Footer />
-  </div>
+  </>
 );
 
 TemplateWrapper.propTypes = {

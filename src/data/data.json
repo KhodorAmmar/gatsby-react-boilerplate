@@ -1,7 +1,7 @@
 {
     "features": [
         {
-            "title": "Now runs gatsby 2!"
+            "title": "Now runs gatsby 2! and hooks!"
         },
         {
             "title": "Basic configuration and folder structure"
