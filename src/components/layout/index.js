@@ -15,8 +15,4 @@ const TemplateWrapper = ({ children }) => (
   </>
 );
 
-TemplateWrapper.propTypes = {
-  children: PropTypes.element.isRequired
-};
-
 export default TemplateWrapper;

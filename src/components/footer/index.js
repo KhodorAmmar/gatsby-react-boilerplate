@@ -1,14 +1,14 @@
 import React from "react";
 import Icon from "../icon";
 import Github from "../icon/github.icon";
-import "./_footer.scss";
+import styles from "./footer.module.css";
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className={styles.footer}>
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <div className="footer-content">
+          <div className={styles.content}>
             <a
               href="https://github.com/PrototypeInteractive/gatsby-react-boilerplate"
               target="_blank"

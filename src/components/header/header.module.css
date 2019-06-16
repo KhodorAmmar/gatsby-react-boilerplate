@@ -1,20 +1,25 @@
 .header {
   width: 100%;
-  &-content {
+
+}
+
+
+.content {
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &-nav-list {
+.navList {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &-item {
+
+  }
+
+.navListItem {
       margin-right: 10px;
     }
-  }
-}

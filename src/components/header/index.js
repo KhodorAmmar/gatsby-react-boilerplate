@@ -1,20 +1,20 @@
 import React from "react";
 
-import "./_header.scss";
+import styles from "./header.module.css";
 
 const Header = () => (
-  <header className="header">
+  <header className={styles.header}>
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <div className="header-content">
-            <span className="header-logo">Gatsby React Boilerplate</span>
-            <nav className="header-nav">
-              <ul className="header-nav-list">
-                <li className="header-nav-list-item">
+          <div className={styles.content}>
+            <span className={styles.logo}>Gatsby React Boilerplate</span>
+            <nav className={styles.nav}>
+              <ul className={styles.navList}>
+                <li className={styles.navListItem}>
                   <a href="#features">Features</a>
                 </li>
-                <li className="header-nav-list-item">
+                <li className={styles.navListItem}>
                   <a href="#howto">How To</a>
                 </li>
               </ul>

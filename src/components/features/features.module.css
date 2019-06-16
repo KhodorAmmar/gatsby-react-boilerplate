@@ -1,7 +1,9 @@
 .features {
-  background-color: #f4f4f4;
+  background-color: var(--light);
   padding: 90px 0;
-  &-title {
+
+}
+
+.title {
     font-weight: bold;
   }
-}

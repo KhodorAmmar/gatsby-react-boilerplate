@@ -1,10 +1,14 @@
 .footer {
   width: 100%;
-  background-color: #333;
-  &-content {
+  background-color: var(--dark);
+  color: var(--light);
+
+}
+
+
+.content {
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-}

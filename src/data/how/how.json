@@ -1,0 +1,13 @@
+{
+  "howTo": [
+        {
+            "title": "Prepare a coffee"
+        },
+        {
+            "title": "Run: `npm i` to install the dependencies"
+        },
+        {
+            "title": "Start coding!"
+        }
+    ]
+}

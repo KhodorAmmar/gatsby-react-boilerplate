@@ -6,7 +6,19 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `svgo`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [
+          require(`postcss-preset-env`)({
+            stage: 1,
+            features: {
+              "custom-css-properties": true
+            }
+          })
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

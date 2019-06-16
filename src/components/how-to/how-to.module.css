@@ -1,7 +1,8 @@
 .howto {
   background-color: #fff;
   padding: 90px 0;
-  &-title {
+}
+
+.title {
     font-weight: bold;
   }
-}

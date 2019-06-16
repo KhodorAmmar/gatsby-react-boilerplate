@@ -1,37 +1,35 @@
 import React from "react";
 
-import "./_how-to.scss";
+import styles from "./how-to.module.css";
 
 import { useStaticQuery, graphql } from "gatsby";
 
 const HowTos = () => {
   const data = useStaticQuery(graphql`
     query HowtoQuery {
-      allDataJson {
-        edges {
-          node {
-            howTo {
-              title
-            }
-          }
+      howJson {
+        howTo {
+          title
         }
       }
     }
   `);
 
+  console.log(data);
+
   return (
-    <section className="howto" id="howto">
+    <section className={styles.howto} id="howto">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h4 className="howto-title">How to</h4>
+            <h4 className={styles.title}>How to</h4>
           </div>
         </div>
         <div className="row">
           <div className="col-12">
-            <ol className="howto-list">
-              {data.allDataJson.edges[0].node.howTo.map((item, i) => (
-                <li className="howto-list-item" key={i}>
+            <ol className={styles.list}>
+              {data.howJson.howTo.map((item, i) => (
+                <li className={styles.listItem} key={i}>
                   {item.title}
                 </li>
               ))}
